@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shanghai Performing Arts Podcast</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #f5f0e1;
+      color: #1c1c1c;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.7;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #d4c9b0;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+      color: #4b3f2f;
+      text-shadow: 1px 1px 2px #ccc;
+    }
+
+    header p {
+      font-size: 1.1em;
+      margin: 5px 0;
+      font-style: italic;
+    }
+
+    .audio-player {
+      max-width: 600px;
+      margin: 40px auto;
+      background-color: #fff8f0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .play-btn {
+      font-size: 1.5em;
+      background-color: #4b3f2f;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 15px;
+    }
+
+    .play-btn:hover {
+      background-color: #2c1f12;
+    }
+
+    .progress-container {
+      width: 100%;
+      background: #d4c9b0;
+      height: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px 0;
+    }
+
+    .progress {
+      background: #4b3f2f;
+      height: 10px;
+      width: 0%;
+      border-radius: 5px;
+    }
+
+    .time {
+      font-size: 0.9em;
+      margin-top: 5px;
+    }
+
+    .references {
+      margin-top: 50px;
+      padding: 20px;
+      background-color: #fff8f0;
+      border-left: 5px solid #4b3f2f;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .references h2 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      color: #4b3f2f;
+      border-bottom: 1px solid #d4c9b0;
+      padding-bottom: 5px;
+    }
+
+    .references ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .references li {
+      margin-bottom: 12px;
+      padding-left: 1.5em;
+      text-indent: -1.5em;
+    }
+
+    a {
+      color: #4b3f2f;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: #2c1f12;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Stages of Shanghai: Performing Arts Center and Shanghai’s Model of Urbanization</h1>
+    <p>By Monica Luo<p>
+    <p>Final Project for GCHN-SHU 200 Making Our Cities Great taught by Professor Lola Woetzel</p>
+  </header>
+
+  <div class="audio-player">
+    <button class="play-btn" id="playBtn">Play</button>
+    <div class="progress-container" id="progressContainer">
+      <div class="progress" id="progress"></div>
+    </div>
+    <div class="time" id="time">0:00 / 0:00</div>
+    <audio id="audio" src="GCS final Project.mp3"></audio>
+  </div>
+
+  <div class="references">
+    <h2>References</h2>
+    <ul>
+      <li>“1998 Nian Wenhua Xianxiang Pingdian [Reflections on Cultural Phenomena in 1998].” Renmin Ribao [People’s Daily], 1999.</li>
+      <li>Chen, Yawei. “Financialising Urban Redevelopment: Transforming Shanghai’s Waterfront.” <i>Land Use Policy</i>, vol. 112, 105126, 2022, https://doi.org/10.1016/j.landusepol.2020.105126.</li>
+      <li>Gu, C. (2024). China’s Urbanization Process. In <i>China’s Urbanization</i> (pp. 175–238). Springer. https://doi.org/10.1007/978-981-97-3782-6_4</li>
+      <li>Kong, Xiangdong. “Art and Life: Using Music as a Mirror to Illuminate the Multidimensional Universe of Sound and Life.” Public Event, NYU Shanghai, 6 Nov. 2025.</li>
+      <li>Kong, Xiangdong. “Returning to Campus for a Day: Life and Music.” Bank of Communication Private Banking Shanghai Event, NYU Shanghai, 21 Nov. 2025.</li>
+      <li>Price, David A. “Interview: Edward Glaeser — On Urbanization, the Future of Small Towns, and ‘Yes In My Back Yard.’” <i>Econ Focus</i>, Q4 2021, Federal Reserve Bank of Richmond, https://www.richmondfed.org/publications/research/econ_focus/2021/q4_interview. Accessed 18 Dec. 2025.</li>
+      <li>“Shanghai Unveils List of 100 New Spaces for Performing Arts.” English — Shanghai Municipal Government, 25 Apr. 2024, english.shanghai.gov.cn/en-Latest-WhatsNew/20240425/434296ce0822481c806b562bedaf8cb6.html. Accessed 19 Dec. 2025.</li>
+      <li>West, Geoffrey. “The Surprising Math of Cities and Corporations.” <i>TED</i>, filmed May 2017, www.ted.com/talks/geoffrey_west_the_surprising_math_of_cities_and_corporations. Accessed 18 Dec. 2025.</li>
+      <li>Zeng, Douglas Zhihua. <i>Building Engines for Growth and Competitiveness in China</i>. World Bank, 2010, https://doi.org/10.1596/978-0-8213-8432-9.</li>
+      <li>Zheng, Zheng. “Immersive Theater Opens New Worlds for Audiences, Industry.” <i>China Daily</i>, 8 Apr. 2025, www.chinadaily.com.cn/a/202504/08/WS67f46849a3104d9fd381dff9_6.html. Accessed 19 Dec. 2025.</li>
+      <li>Interview Answers from Layla, Marketing Coordinator from New Bund 31: <a href="https://docs.google.com/document/d/1DxsBfBw9AefWR3zT0hxZwkyVXIc5sqlWRkLhRc4Pgt8/edit?usp=sharing">Link</a></li>
+      <li>Interview Answers from Yiwei, International Events Coordinator from Shanghai Ballet: <a href="https://docs.google.com/document/d/1fXOejJ2766OLfQlg27DglFGJLH3TtOBi5D705YdI8dc/edit?usp=sharing">Link</a></li>
+      <li>Interview Answers from Professor Shiwen Liu: <a href="https://docs.google.com/document/d/1-_-OgsfZaLW-3qm7UwbMdLPDXKTKH3sWGHIz_OesY2U/edit?usp=sharing">Link</a></li>
+    </ul>
+    <p><strong>AI Usage:</strong>After writing a script, I asked ChatGPT to point our areas of repetitiveness and give me a suggested flow of topics for my podcast, and then revised my script from a grammatical perspective. ChatGPT was also used to produce MLA citations for online articles and translate interview answers from my interviewees into english, translate my interview questions into Chinese, and translate new articles that were in Chinese to English. To cross reference translations, I also used Deepl to see if the translation was consistent to get greater understanding of the Chinese text. Lastly, to make this project easier to turn in, ChatGPT provided me the github code for this weiste-like presentation in which I uploaded onto Github for easier access. 
+    </p>
+    <figure style="margin-top: 30px; text-align: center;">
+        <img 
+          src="Map.png" 
+          alt="Performing arts space in Shanghai" 
+          style="max-width: 100%; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"
+        >
+        <figcaption style="margin-top: 10px; font-size: 0.9em; font-style: italic; color: #4b3f2f;">
+          I spent an hour scrolling through Rednot(小红书) to create this map so some of the more active performing arts center in Shanghai. Created on Google My Map.<a href="https://www.google.com/maps/d/u/0/edit?mid=1Z_dhdAkZJb9CybwWB6h27Et-9d-Iq3Q&ll=31.29127038798692%2C121.08335586825206&z=10">Link</a></li>
+        </figcaption>
+      </figure>
+      
+  </div>
+
+  <script>
+    const audio = document.getElementById('audio');
+    const playBtn = document.getElementById('playBtn');
+    const progress = document.getElementById('progress');
+    const progressContainer = document.getElementById('progressContainer');
+    const time = document.getElementById('time');
+
+    // Play / Pause toggle
+    playBtn.addEventListener('click', () => {
+      if(audio.paused){
+        audio.play();
+        playBtn.textContent = 'Pause';
+      } else {
+        audio.pause();
+        playBtn.textContent = 'Play';
+      }
+    });
+
+    // Update progress bar and time
+    audio.addEventListener('timeupdate', () => {
+      const percent = (audio.currentTime / audio.duration) * 100;
+      progress.style.width = percent + '%';
+      let currentMin = Math.floor(audio.currentTime / 60);
+      let currentSec = Math.floor(audio.currentTime % 60);
+      let durationMin = Math.floor(audio.duration / 60);
+      let durationSec = Math.floor(audio.duration % 60);
+      if(currentSec < 10) currentSec = '0' + currentSec;
+      if(durationSec < 10) durationSec = '0' + durationSec;
+      if(isNaN(durationMin)) durationMin = 0;
+      if(isNaN(durationSec)) durationSec = 0;
+      time.textContent = `${currentMin}:${currentSec} / ${durationMin}:${durationSec}`;
+    });
+
+    // Scrub functionality
+    progressContainer.addEventListener('click', (e) => {
+      const width = progressContainer.clientWidth;
+      const clickX = e.offsetX;
+      const duration = audio.duration;
+      audio.currentTime = (clickX / width) * duration;
+    });
+  </script>
+
+</body>
+</html>
